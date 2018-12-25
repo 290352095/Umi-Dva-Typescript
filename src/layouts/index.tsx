@@ -1,5 +1,4 @@
 import BasicLayout from './BasicLayout';
-import TestLayout from './TestLayout';
 import DisplayLayout from './DisplayLayout';
 import GlobalLayout from './GlobalLayout';
 import './BasicLayout.less';
@@ -12,8 +11,10 @@ export default function(props: ComProps) {
   switch (firstLevenPath) {
     case 'display':
       ChlLayout = () => <DisplayLayout>{props.children}</DisplayLayout>;
+      break;
     case 'test':
       ChlLayout = () => <BasicLayout>{props.children}</BasicLayout>;
+      break;
   }
   return (
     <GlobalLayout>
