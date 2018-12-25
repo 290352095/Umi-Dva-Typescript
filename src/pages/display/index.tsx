@@ -1,15 +1,4 @@
-import React, {
-  PureComponent,
-  useCallback,
-  useContext,
-  useEffect,
-  useImperativeMethods,
-  useLayoutEffect,
-  useMemo,
-  useReducer,
-  useRef,
-  useState,
-} from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'dva';
 
 @connect(({ displayModel }) => ({

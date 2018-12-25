@@ -1,13 +1,6 @@
-import {
-  Reducer,
-  AnyAction,
-  // ReducersMapObject,
-  Dispatch,
-  MiddlewareAPI,
-  StoreEnhancer,
-} from 'redux';
+import { AnyAction, Dispatch, Reducer } from 'redux';
 import { History } from 'history';
-import { Component } from 'react';
+
 
 export interface ReducersMapObject<T> {
   [key: string]: (api: ReducerPayload<T>) => T;

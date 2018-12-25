@@ -88,7 +88,7 @@ module.exports = {
     // 使用该项配置会导致esLint挂掉?  babel-eslint升级之8.0.0版本
     // "no-unused-vars": "error",
     'no-unused-vars': [
-      1, // 局部变量未使用
+      0, // 局部变量未使用
       {
         vars: 'all',
         args: 'after-used',
@@ -98,7 +98,7 @@ module.exports = {
     'no-undef': 0, // 未定义的变量
     'no-dupe-keys': 2, // 在创建对象字面量时不允许键重复 {a:1,a:1}
     'no-dupe-args': 2, // 函数参数不能重复
-    'no-unused-expressions': 1, // 未使用的表达式
+    'no-unused-expressions': 0, // 未使用的表达式
     'no-use-before-define': 0, // 允许定义前使用
     yoda: 0,
     eqeqeq: 0,
@@ -229,9 +229,39 @@ module.exports = {
     /**
      * ts 规范
      */
-    'typescript/class-name-casing': 2,
-    'typescript/member-ordering': 0,
+
+    // 'typescript/no-constant-condition': 2,
+    'typescript/quotemark': [true,"single","avoid-escape","jsx-double"],
+    'typescript/no-console': 0,
+    'typescript/ordered-imports': 0,
     'typescript/no-namespace': 0,
+    'typescript/object-literal-sort-keys': 0,
+    'typescript/arrow-parens': 0,
+    'typescript/no-empty': 0,
+    'typescript/no-var-requires': 0,
+    'typescript/array-type': 0,
+    // 'typescript/member-ordering': [true,{
+    //   "order":[
+    //     "private-static-field",
+    //     "protected-static-field",
+    //     "public-static-field",
+    //     "private-instence-field",
+    //     "protected-instence-field",
+    //     "public-instence-field",
+    //     "private-constructor",
+    //     "protected-constructor",
+    //     "public-constructor",
+    //     "private-static-method",
+    //     "protected-static-method",
+    //     "public-static-method",
+    //     "private-instence-method",
+    //     "protected-instence-method",
+    //     "public-instence-method"
+    //   ]
+    // }],
+    'typescript/object-literal-key-quotes': [true,"as-needed"],
+    'typescript/no-trailing-whitespace': [false,"ignore-comments"],
+    'typescript/class-name-casing': 2,
 
     /**
      * React JSX 规范
@@ -267,5 +297,9 @@ module.exports = {
       },
     ],
     'react/jsx-indent-props': 0,
+
+
+    'no-var':0
   },
+
 };
